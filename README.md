@@ -1,4 +1,4 @@
-# HTML Notes
+# Lecture Notes
 * Inline n Block Elements
     * Inline elements cant have some style properties that blocks have such as height and weight. However they can be identified like block such as :
     ```
@@ -13,4 +13,11 @@
 
 * Normalize.css
 
-* lllllllll
+* Basic Selectors
+    * universal selector: (*)
+    * type selector: (input,h1)
+    * class selector: (.classname)
+    * id name selector: (#id)
+    * attribute selector: (  [class] {color: red};  ,   [id] {color: blue};   )
+
+* 
