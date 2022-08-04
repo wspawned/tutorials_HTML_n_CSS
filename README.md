@@ -65,7 +65,7 @@
 * When label is clicked it focuses on associated element.
 <br>
 
-    Label for references the id of anything associated. If label tag contains the associated element, then no need id and for.<br> 
+* Label for references the id of anything associated. If label tag contains the associated element, then no need id and for.<br> 
 Below examples mean same thing.
 
     ```
@@ -84,6 +84,51 @@ Below examples mean same thing.
 
 * If radio type inputs have same name, only one can be chosen at a time. Using "checked" makes one of them default.
 
-* Input value and name is important while posting the form.
+* Input value and name is important while posting the form. Name works as key.
 
-# What about https://httpbin.org/forms/post ??
+* Some selector identifications in CSS for components and actions;
+    ```
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+    color: rgb(175, 175, 175);
+    }
+
+    input[type="email"]:focus,
+    textarea:focus {
+    border-color: rgb(68, 176, 255);
+    }
+
+    :focus {
+    outline: 0;
+    }
+    ```
+
+* Icon that is used on background can be pixel fixed as background-size;
+    ```
+    select {
+    -webkit-appearance: none;
+    background-image: url("angle-down.png");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: right 10px center;
+    }
+    ```
+
+* "+" sign can be used to mean "if some elements comes one after another" in CSS;
+    ```
+    .radio-container label + label {
+    margin-left: 10px;
+    }
+    ```
+
+* .form-row > label -->affects one-down position children so it doesn't include the lower label tags.
+
+# Reset CSS and CSS Box Model
+
+
+
+
+
+# ?
+* What about https://httpbin.org/forms/post
+* something is not working in .radio-container label + label in form elements

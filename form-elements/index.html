@@ -7,27 +7,29 @@
 <body>
     
     <form action="https://httpbin.org/post" method="POST">
-        <div>
+        <div class="form-row">
             <label for="name">Name</label>
-            <input name="name" id="name" type="text" required />
+            <input name="name" id="name" type="text" required placeholder="John Doe" />
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="tel">Phone Number</label>
-            <input name="tel" id="tel" type="tel" required />
+            <input name="tel" id="tel" type="tel" required placeholder="+90 *** *** ** **" />
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="mail">E-mail</label>
-            <input name="mail" id="mail" type="email" required />
+            <input name="mail" id="mail" type="email" required placeholder="john@doe.com" />
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="msg">Write us anything</label>
-            <textarea name="msg" id="msg" cols="50" rows="4"></textarea>
+            <textarea name="msg" id="msg" cols="50" rows="4"
+            placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor"
+            ></textarea>
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="city">City</label>
             <select name="city" id="city">
                 <option value="istanbul">İstanbul</option>
@@ -36,14 +38,16 @@
             </select>
         </div>
 
-        <div>
-            <label for="topic">Topic</label>
-            <input type="radio" name="topic" value="discount" >discount</input>
-            <input type="radio" name="topic" value="refund" >refund</input>
-            <input type="radio" name="topic" value="other" >other</input>
+        <div class="form-row">
+            <p>Case</p>
+            <div class="radio-container">
+            <label></label><input type="radio" name="case" value="discount" >discount</input></label>
+            <label></label><input type="radio" name="case" value="refund" >refund</input></label>
+            <label></label><input type="radio" name="case" value="other" >other</input></label>
+            </div>
         </div>
 
-        <div>
+        <div class="form-row">
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </div>
