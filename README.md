@@ -20,4 +20,44 @@
     * id name selector: (#id)
     * attribute selector: (  [class] {color: red};  ,   [id] {color: blue};   )
 
-* llllll
+* CSS can be added to HTML documents in 3 ways:
+    * **Inline** - by using the ```style``` attribute inside HTML elements
+    * **Internal** - by using a ```<style>``` element in the ```<head>``` section
+    * **External** - by using a ```<link>``` element to link to an external CSS file
+
+
+    ```
+    <!DOCTYPE html>
+    <html>
+    <head>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    </head>
+    <body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+
+    </body>
+    </html>
+    ```
+* Size unit "em" is better for scaling 
+    ``` 
+    1 em = 16px 
+    ```
+* CSS helper classes, also known as utility classes, are used as,
+    ``` 
+    .gray {
+    color: gray;
+    }
+
+    .ff-sans {
+    font-family: sans-serif;
+    }
+
+    <h3 class="gray ff-sans">
+        something grey n sans serif
+    </h3>
+    ```
+
