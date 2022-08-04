@@ -1,0 +1,54 @@
+
+<html>
+<head>
+    <title>Form Elements</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    
+    <form action="https://httpbin.org/post" method="POST">
+        <div>
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" required />
+        </div>
+
+        <div>
+            <label for="tel">Phone Number</label>
+            <input name="tel" id="tel" type="tel" required />
+        </div>
+
+        <div>
+            <label for="mail">E-mail</label>
+            <input name="mail" id="mail" type="email" required />
+        </div>
+
+        <div>
+            <label for="msg">Write us anything</label>
+            <textarea name="msg" id="msg" cols="50" rows="4"></textarea>
+        </div>
+
+        <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="istanbul">İstanbul</option>
+                <option value="çanakkale">Çanakkale</option>
+                <option value="izmir">İzmir</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="topic">Topic</label>
+            <input type="radio" name="topic" value="discount" >discount</input>
+            <input type="radio" name="topic" value="refund" >refund</input>
+            <input type="radio" name="topic" value="other" >other</input>
+        </div>
+
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

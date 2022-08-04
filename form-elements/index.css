@@ -1,0 +1,12 @@
+label {
+    display:block;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 260px;
+}

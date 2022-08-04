@@ -60,4 +60,30 @@
         something grey n sans serif
     </h3>
     ```
+# Form Elements
 
+* When label is clicked it focuses on associated element.
+<br>
+
+    Label for references the id of anything associated. If label tag contains the associated element, then no need id and for.<br> 
+Below examples mean same thing.
+
+    ```
+    <form action="">
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+    </form>
+    ```
+
+    ```
+    <form action="">
+        <label> Name <input type="text" /> </label>  
+    </form>
+    ```
+* Input type declares what is expected. In mobiles, suitable keyboard opens due type, such as numbers or words.
+
+* If radio type inputs have same name, only one can be chosen at a time. Using "checked" makes one of them default.
+
+* Input value and name is important while posting the form.
+
+# What about https://httpbin.org/forms/post ??
