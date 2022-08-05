@@ -1,4 +1,4 @@
-# Lecture Notes
+# Introduction
 * Inline n Block Elements
     * Inline elements cant have some style properties that blocks have such as height and weight. However they can be identified like block such as :
     ```
@@ -11,14 +11,14 @@
 
 * When inspecting on browser Styles is the part what I identified for elements and Computed is what is identified automatically by browser.
 
-* Normalize.css
-
 * Basic Selectors
     * universal selector: (*)
     * type selector: (input,h1)
     * class selector: (.classname)
     * id name selector: (#id)
     * attribute selector: (  [class] {color: red};  ,   [id] {color: blue};   )
+
+# Blog Design
 
 * CSS can be added to HTML documents in 3 ways:
     * **Inline** - by using the ```style``` attribute inside HTML elements
@@ -123,10 +123,35 @@ Below examples mean same thing.
 
 * .form-row > label -->affects one-down position children so it doesn't include the lower label tags.
 
-# Reset CSS and CSS Box Model
+# Box Sizing
 
+* Box sizing is used to keep child container inside of parent container.<br>
+ It handles problems about border but wont affect margin.
 
+* Therefore, at start of a project applying box sizing as below to make some adjustment is useful for smooth working.
+    ```
+    * {
+        box-sizing: border-box;
+    }
+    ```
 
+* In this example (*) refers to universal selector. 
+
+* Parent containers padding works as margin of the child container.
+
+# Reset.css and Normalize.css
+
+* This adjustments must be in the first line of CSS
+
+* Reset.css disables all the auto-stylings in browsers and makes view exact in all browsers
+
+* Normalize.css only provides similarity in browsers and keeps auto styling for practicality.
+
+* Normalize.css can be imported in CSS by url
+    ```
+    @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    ```
+* 
 
 
 # ?
