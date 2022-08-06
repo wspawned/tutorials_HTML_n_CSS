@@ -151,7 +151,49 @@ Below examples mean same thing.
     ```
     @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     ```
-* 
+
+# Shorthand Properties
+
+* padding: 20px 10px 50px 40px; <br>
+    * padding-top: 20px; <br>
+    * padding-right: 10px; <br>
+    * padding-bottom: 50px; <br>
+    * padding-left: 40px;
+
+* Padding works as clockwise
+
+* padding: 20px 0 50px 40px;
+    * no padding on right
+
+* padding: 20px 50px 40px;
+    * right and left 50px works symmetrically
+
+* padding: 20px 40px;
+    * top and bottom 20px
+    * right and left 40px
+
+* border: 10px dashed yellow;
+
+    * border-width: 10px; <br>
+    * border-style: dashed; <br>
+    * border-color: yellow;
+
+* Also apply them to all surface 
+
+* background: red url("https://") center top no-repeat;
+    * background-color: red;
+    * background-image: url("https://");
+    * background-position-x: center;
+    * background-position-y: top;
+    * background-repeat: no-repeat;
+
+* font: italic bold 20px/1.4 sans-serif;
+    * font-style: italic;
+    * font-weight: bold;
+    * line-height: 1.4;
+    * font-family: sans-serif;
+
+
 
 
 # ?
