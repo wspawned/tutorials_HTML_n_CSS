@@ -1,5 +1,5 @@
 # Introduction
-* Inline n Block Elements
+* Inline and Block Elements
     * Inline elements cant have some style properties that blocks have such as height and weight. However they can be identified like block such as :
     ```
     <b style="
@@ -42,9 +42,10 @@
     </body>
     </html>
     ```
-* Size unit "em" is better for scaling 
+* Size unit "em" is better for scaling. It takes font-size as a reference. <br>
+    If browser uses default.
     ``` 
-    1 em = 16px 
+    1 em = 16px
     ```
 * CSS helper classes, also known as utility classes, are used as,
     ``` 
@@ -193,9 +194,91 @@ Below examples mean same thing.
     * line-height: 1.4;
     * font-family: sans-serif;
 
+# Color Properties
 
+* Color Names<br>
+This way contains 147 colors. <br>
+http://www.colors.commutercreative.com/grid/
+    * color: red
 
+* HEX<br>
+Hexadecimal codes can be used in 3 or 6 digit
+    * color: #ff4455
+    * color: #f45
 
-# ?
-* What about https://httpbin.org/forms/post
-* something is not working in .radio-container label + label in form elements
+* RGB 
+    * color: rgb(165, 76, 219)
+
+* RGBA <br>
+Alfa arranges opacity.
+    * color: rgb(165, 76, 219, 0.6)
+
+* Current Color<br>
+This method first checks the container if any color defined and uses that color. If it is not defined, then checks the Parent Container.
+    ```
+    p {
+        padding: 30px;
+        color: white;
+        background-color: currentColor;
+    }
+    ```
+
+# CSS Units
+
+* 1px
+
+* 1em = font-size <br>
+first check itself then parent
+
+* rem = root em <br>
+directly goes for root, so it takes font size of html
+    ```
+    html {
+        font-size: 20px;
+    }
+    ```
+
+* % <br>
+uses percentage of the Parent container's property if exists<br>
+width: 30%;
+
+* vh = viewport height <br>
+  vw = viewport width
+
+    ```
+    .box {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    }
+    ```
+    gives a red box full screen of browser
+
+* vmin <br>
+  vmax <br>
+
+    uses the max or min side length of browser.
+
+# View Properties
+
+* visibility: hidden; <br>
+  display: none; <br>
+  opacity: .2; <br>
+  All of them loaded in the page but wont show
+
+# @font-face
+
+* https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+* https://transfonter.org
+
+* https://caniuse.com/#home
+
+* woff & woff2 formats
+
+* https://fonts.google.com
+
+# Notes
+* https://httpbin.org/forms/post
+* something is wrong in form elements part<br>
+  .radio-container label + label <br>
