@@ -280,5 +280,3 @@ width: 30%;
 
 # Notes
 * https://httpbin.org/forms/post
-* something is wrong in form elements part<br>
-  .radio-container label + label <br>
