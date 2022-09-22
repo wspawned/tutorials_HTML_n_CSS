@@ -280,3 +280,7 @@ width: 30%;
 
 # Notes
 * https://httpbin.org/forms/post
+
+![image](https://user-images.githubusercontent.com/80424496/191860407-e22d3d5b-b748-4874-b3e6-ce83a20dbcb2.png)
+![image](https://user-images.githubusercontent.com/80424496/191860435-9e06df7a-1af0-4027-be13-34619ee145ac.png)
+
